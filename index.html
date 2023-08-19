@@ -65,8 +65,7 @@
                         <h2 class="card-title">K. Accessories</h2>
                         <p><span>39.00</span> TK</p>
                         <div class="card-actions">
-                            <button class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy
-                                Now</button>
+                            <button onclick="btnClickHandler(this)" class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -87,8 +86,7 @@
                         <h2 class="card-title">K. Accessories</h2>
                         <p><span>25.00</span> TK</p>
                         <div class="card-actions">
-                            <button class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy
-                                Now</button>
+                            <button onclick="btnClickHandler(this)" class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -107,10 +105,9 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <h2 class="card-title">Home Cooker</h2>
-                        <p><span>49.00</span> TK</p>
+                        <p><span class="price">49.00</span> TK</p>
                         <div class="card-actions">
-                            <button class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy
-                                Now</button>
+                            <button onclick="btnClickHandler(this)" class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -123,8 +120,11 @@
                 <p><input class="py-2 pl-2 border rounded-l-lg border-gray-200 w-[150px]" type="text" placeholder="Coupon code"><button class="bg-[#E527B2] rounded-r-lg p-2 text-white">Apply</button></p>
             </div>
             <div class="shadow-xl rounded-lg p-6 space-y-4">
+                <div id="selected-product" class="selected-product font-semibold">
+
+                </div>
                 <hr>
-                <p class="text-xl font-medium">Total Price :</p>
+                <p class="text-xl font-medium">Total Price : <span id="total-price">0</span> Tk</p>
                 <p class="text-xl font-medium">Discount :</p>
                 <p class="text-xl font-medium">Total :</p>
                 <button class="btn-wide bg-[#E527B2] rounded-lg py-3 text-white">Make Purchase</button>
