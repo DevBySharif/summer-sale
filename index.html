@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a1afdda7a.js" crossorigin="anonymous"></script>
 
     <!-- custom css style -->
     <style>
@@ -25,11 +26,10 @@
 </head>
 
 <body>
-    <header class="mx-auto">
+    <header>
         <!-- banner section -->
         <div class="w-full min-h-[50%] bg-[#F9F6E2]">
-            <div class="hero-content flex-col lg:flex-row-reverse gap-20">
-                <img src="./images/Summer 1.png" class="max-w-sm rounded-lg" />
+            <div class="flex flex-col-reverse lg:flex-row md:flex-col-reverse text-center justify-center items-center py-20 gap-12">
                 <div class="space-y-11">
                     <h3 class="text-3xl font-medium">---SALE FEVER---</h3>
                     <h1 class="text-5xl font-bold">
@@ -38,9 +38,10 @@
                         above & get <span class="text-[#E527B2]">20% off</span>
                     </h1>
                     <p class="text-2xl font-medium">Use Promo Code <button
-                            class="btn-sm rounded-lg bg-[#E527B2] text-xl font-semibold text-white"
+                            class="btn-sm rounded-lg hover:bg-pink-600 transition-colors bg-[#E527B2] text-xl font-semibold text-white"
                             onclick="copyPromoCode()">SELL200</button></p>
                 </div>
+                <img src="./images/Summer 1.png" class="max-w-sm rounded-lg" />
             </div>
         </div>
     </header>
@@ -67,10 +68,13 @@
                             </div>
                             <h2 class="card-title">K. Accessories</h2>
                             <p><span>39.00</span> TK</p>
-                            <div class="card-actions">
+                            <div class="card-actions gap-8 ">
+                                <button class="px-2 py-2 mt-2 transition-transform transform hover:scale-110 rounded-md text-sm bg-pink-500 text-white">Buy Now</button>
                                 <button onclick="btnClickHandler(this)"
-                                    class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy Now</button>
-                            </div>
+                                        class="px-4 py-3 rounded-md text-white font-medium transition-transform transform hover:scale-110">
+                                  <i class="fa-solid fa-cart-plus fa-2xl" style="color: #ec4899"></i>
+                                </button>
+                              </div>
                         </div>
                     </div>
 
@@ -89,9 +93,10 @@
                             </div>
                             <h2 class="card-title">K. Accessories</h2>
                             <p><span>25.00</span> TK</p>
-                            <div class="card-actions">
+                            <div class="card-actions gap-8">
+                                <button class="px-2 py-2 mt-2 transition-transform transform hover:scale-110 rounded-md text-sm bg-pink-500 text-white">Buy Now</button>
                                 <button onclick="btnClickHandler(this)"
-                                    class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy Now</button>
+                                    class="px-4 py-3 rounded-md text-white font-medium transition-transform transform hover:scale-110"><i class="fa-solid fa-cart-plus fa-2xl" style="color: #ec4899"></i></button>
                             </div>
                         </div>
                     </div>
@@ -111,9 +116,10 @@
                             </div>
                             <h2 class="card-title">Home Cooker</h2>
                             <p><span class="price">49.00</span> TK</p>
-                            <div class="card-actions">
+                            <div class="card-actions gap-8">
+                                <button class="px-2 py-2 mt-2 transition-transform transform hover:scale-110 rounded-md text-sm bg-pink-500 text-white">Buy Now</button>
                                 <button onclick="btnClickHandler(this)"
-                                    class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy Now</button>
+                                    class="px-4 py-3 rounded-md text-white font-medium transition-transform transform hover:scale-110"><i class="fa-solid fa-cart-plus fa-2xl" style="color: #ec4899"></i></button>
                             </div>
                         </div>
                     </div>
@@ -140,9 +146,10 @@
                             </div>
                             <h2 class="card-title">Sports Back Cap</h2>
                             <p><span>49.00</span> TK</p>
-                            <div class="card-actions">
+                            <div class="card-actions gap-8">
+                                <button class="px-2 py-2 mt-2 transition-transform transform hover:scale-110 rounded-md text-sm bg-pink-500 text-white">Buy Now</button>
                                 <button onclick="btnClickHandler(this)"
-                                    class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy Now</button>
+                                    class="px-4 py-3 rounded-md text-white font-medium transition-transform transform hover:scale-110"><i class="fa-solid fa-cart-plus fa-2xl" style="color: #ec4899"></i></button>
                             </div>
                         </div>
                     </div>
@@ -162,9 +169,10 @@
                             </div>
                             <h2 class="card-title">Full Jersey Set</h2>
                             <p><span>69.00</span> TK</p>
-                            <div class="card-actions">
+                            <div class="card-actions gap-8">
+                                <button class="px-2 py-2 mt-2 transition-transform transform hover:scale-110 rounded-md text-sm bg-pink-500 text-white">Buy Now</button>
                                 <button onclick="btnClickHandler(this)"
-                                    class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy Now</button>
+                                    class="px-4 py-3 rounded-md text-white font-medium transition-transform transform hover:scale-110"><i class="fa-solid fa-cart-plus fa-2xl" style="color: #ec4899"></i></button>
                             </div>
                         </div>
                     </div>
@@ -184,9 +192,10 @@
                             </div>
                             <h2 class="card-title">Sports cates</h2>
                             <p><span class="price">159.00</span> TK</p>
-                            <div class="card-actions">
+                            <div class="card-actions gap-8">
+                                <button class="px-2 py-2 mt-2 transition-transform transform hover:scale-110 rounded-md text-sm bg-pink-500 text-white">Buy Now</button>
                                 <button onclick="btnClickHandler(this)"
-                                    class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy Now</button>
+                                    class="px-4 py-3 rounded-md text-white font-medium transition-transform transform hover:scale-110"><i class="fa-solid fa-cart-plus fa-2xl" style="color: #ec4899"></i></button>
                             </div>
                         </div>
                     </div>
@@ -213,9 +222,10 @@
                             </div>
                             <h2 class="card-title">Single Relax Chair</h2>
                             <p><span>185.00</span> TK</p>
-                            <div class="card-actions">
+                            <div class="card-actions gap-8">
+                                <button class="px-2 py-2 mt-2 transition-transform transform hover:scale-110 rounded-md text-sm bg-pink-500 text-white">Buy Now</button>
                                 <button onclick="btnClickHandler(this)"
-                                    class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy Now</button>
+                                    class="px-4 py-3 rounded-md text-white font-medium transition-transform transform hover:scale-110"><i class="fa-solid fa-cart-plus fa-2xl" style="color: #ec4899"></i></button>
                             </div>
                         </div>
                     </div>
@@ -235,9 +245,10 @@
                             </div>
                             <h2 class="card-title">Children play</h2>
                             <p><span>299.00</span> TK</p>
-                            <div class="card-actions">
+                            <div class="card-actions gap-8">
+                                <button class="px-2 py-2 mt-2 transition-transform transform hover:scale-110 rounded-md text-sm bg-pink-500 text-white">Buy Now</button>
                                 <button onclick="btnClickHandler(this)"
-                                    class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy Now</button>
+                                    class="px-4 py-3 rounded-md text-white font-medium transition-transform transform hover:scale-110"><i class="fa-solid fa-cart-plus fa-2xl" style="color: #ec4899"></i></button>
                             </div>
                         </div>
                     </div>
@@ -257,9 +268,10 @@
                             </div>
                             <h2 class="card-title">Flexible Sofa</h2>
                             <p><span class="price">339.00</span> TK</p>
-                            <div class="card-actions">
+                            <div class="card-actions gap-8">
+                                <button class="px-2 py-2 mt-2 transition-transform transform hover:scale-110 rounded-md text-sm bg-pink-500 text-white">Buy Now</button>
                                 <button onclick="btnClickHandler(this)"
-                                    class="bg-[#E527B2] px-4 py-3 rounded-md text-white font-medium">Buy Now</button>
+                                    class="px-4 py-3 rounded-md text-white font-medium transition-transform transform hover:scale-110"><i class="fa-solid fa-cart-plus fa-2xl" style="color: #ec4899"></i></button>
                             </div>
                         </div>
                     </div>
@@ -273,7 +285,7 @@
                     <h3 class="text-xl font-medium">Have coupon?</h3>
                     <p><input id="input-area" class="py-2 pl-2 border rounded-l-lg border-gray-200 w-[150px]"
                             type="text" placeholder="Coupon code"><button id="btn-apply"
-                            class="bg-[#E527B2] rounded-r-lg p-2 text-white" onclick="btnApplyHandler()"
+                            class="bg-pink-500 hover:bg-pink-600 transition-colors rounded-r-lg p-2 text-white" onclick="btnApplyHandler()"
                             disabled>Apply</button></p>
                 </div>
                 <div class="shadow-xl rounded-lg p-6 space-y-4">
@@ -284,7 +296,7 @@
                     <p class="text-xl font-medium">Total Price : <span id="total-price">0</span> Tk</p>
                     <p class="text-xl font-medium">Discount : <span id="discount-price">0</span> Tk</p>
                     <p class="text-xl font-medium">Total : <span id="discounted-total-price">0</span> Tk</p>
-                    <button id="btn-purchase" class="btn-wide bg-[#E527B2] rounded-lg py-3 text-white" onclick="my_modal_5.showModal()" disabled>Make
+                    <button id="btn-purchase" class="btn-wide bg-pink-500 hover:bg-pink-600 transition-colors rounded-lg py-3 text-white" onclick="my_modal_5.showModal()" disabled>Make
                         Purchase</button>
                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                         <form method="dialog" class="modal-box w-[400px] h-[400px] grid justify-center">
@@ -293,7 +305,7 @@
                             <p class="py-4">Your Purchase the product</p>
                             <div class="text-center">
                                 <!-- if there is a button in form, it will close the modal -->
-                                <button id="btn-go-home" onclick="btnGoToHome(this)" class="btn-wide w-32 bg-[#E527B2] rounded-lg py-3 text-white">Go Home</button>
+                                <button id="btn-go-home" onclick="btnGoToHome(this)" class="btn-wide w-32 bg-pink-500 hover:bg-pink-600 transition-colors rounded-lg py-3 text-white">Go Home</button>
                             </div>
                         </form>
                     </dialog>
