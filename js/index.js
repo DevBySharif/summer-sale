@@ -1,13 +1,13 @@
 let total = 0;
-function btnClickHandler(event) {
+function btnClickHandler(buy) {
     const selectedItemContainer = document.getElementById('selected-product');
-    const productName = event.parentNode.parentNode.childNodes[3].innerText;
+    const productName = buy.parentNode.parentNode.childNodes[3].innerText;
 
     const li = document.createElement('li');
     li.innerText = productName;
     selectedItemContainer.appendChild(li);
 
-    const productPrice = event.parentNode.parentNode.childNodes[5].innerText
+    const productPrice = buy.parentNode.parentNode.childNodes[5].innerText
     total += parseFloat(productPrice)
 
     const previousTotalPrice = document.getElementById('total-price');
@@ -42,6 +42,13 @@ function btnApplyHandler() {
         alert('Coupon Applied')
     }
     couponInputArea.value = '';
+}
+
+// goToHome button
+
+function btnGoToHome(home){
+    const btnGoToHome = document.getElementById('btn-go-home')
+    window.location.href = 'index.html'
 }
 
 
