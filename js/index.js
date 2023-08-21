@@ -3,12 +3,13 @@ function btnClickHandler(buy) {
     const selectedItemContainer = document.getElementById('selected-product');
     const productName = buy.parentNode.parentNode.childNodes[3].innerText;
 
-    const li = document.createElement('li');
-    li.innerText = productName;
-    selectedItemContainer.appendChild(li);
+    const count = selectedItemContainer.childElementCount;
+    const p = document.createElement('p');
+    p.innerText = `${count + 1}. ${productName}`;
+    selectedItemContainer.appendChild(p);
 
-    const productPrice = buy.parentNode.parentNode.childNodes[5].innerText
-    total += parseFloat(productPrice)
+    const productPrice = buy.parentNode.parentNode.childNodes[5].innerText;
+    total += parseFloat(productPrice);
 
     const previousTotalPrice = document.getElementById('total-price');
     const discountedTotalPrice = document.getElementById('discounted-total-price');
@@ -17,15 +18,17 @@ function btnClickHandler(buy) {
 
     // enable button
     const btnPurchase = document.getElementById('btn-purchase');
-    const btnApply = document.getElementById('btn-apply')
-    if (total > 200) {
+    const btnApply = document.getElementById('btn-apply');
+    if (total >= 200) {
         btnApply.removeAttribute('disabled');
+        btnApply.classList.add('hover:bg-pink-600', 'transition-colors');
 
     } if (total > 0) {
         btnPurchase.removeAttribute('disabled');
+        btnPurchase.classList.add('hover:bg-pink-600','transition-colors')
     }
 
-    btnApplyHandler(total);
+    
 }
 
 // promo code apply
@@ -37,11 +40,14 @@ function btnApplyHandler() {
 
     if (inputValue == 'SELL200') {
         const discountAmount = (total * 0.2).toFixed(2);
-        const discountPriceInput = document.getElementById('discount-price')
+        const discountPriceInput = document.getElementById('discount-price');
         discountPriceInput.innerText = discountAmount;
         const discountedTotalPrice = document.getElementById('discounted-total-price');
         discountedTotalPrice.innerText = total - discountAmount;
         alert('Coupon Applied')
+    }
+    else{
+        alert('Invalid Code')
     }
     couponInputArea.value = '';
 }
@@ -49,8 +55,8 @@ function btnApplyHandler() {
 // goToHome button
 
 function btnGoToHome(home){
-    const btnGoToHome = document.getElementById('btn-go-home')
-    window.location.href = 'index.html'
+    const btnGoToHome = document.getElementById('btn-go-home');
+    window.location.href = 'index.html';
 }
 
 

@@ -285,18 +285,19 @@
                     <h3 class="text-xl font-medium">Have coupon?</h3>
                     <p><input id="input-area" class="py-2 pl-2 border rounded-l-lg border-gray-200 w-[150px]"
                             type="text" placeholder="Coupon code"><button id="btn-apply"
-                            class="bg-pink-500 hover:bg-pink-600 transition-colors rounded-r-lg p-2 text-white" onclick="btnApplyHandler()"
+                            class="bg-pink-500 rounded-r-lg p-2 text-white" onclick="btnApplyHandler()"
                             disabled>Apply</button></p>
                 </div>
                 <div class="shadow-xl rounded-lg p-6 space-y-4">
-                    <div id="selected-product" class="selected-product font-semibold">
+                    <p class="text-xl font-semibold">Cart Items :</p>
+                    <div id="selected-product" class="selected-product font-medium">
 
                     </div>
                     <hr>
-                    <p class="text-xl font-medium">Total Price : <span id="total-price">0</span> Tk</p>
-                    <p class="text-xl font-medium">Discount : <span id="discount-price">0</span> Tk</p>
-                    <p class="text-xl font-medium">Total : <span id="discounted-total-price">0</span> Tk</p>
-                    <button id="btn-purchase" class="btn-wide bg-pink-500 hover:bg-pink-600 transition-colors rounded-lg py-3 text-white" onclick="my_modal_5.showModal()" disabled>Make
+                    <p class="text-xl font-medium">Total Price : <span id="total-price" class="font-bold">0</span> Tk</p>
+                    <p class="text-xl font-medium">Discount : <span id="discount-price" class="font-bold">0</span> Tk</p>
+                    <p class="text-xl font-medium">Total : <span id="discounted-total-price" class="font-bold">0</span> Tk</p>
+                    <button id="btn-purchase" class="btn-wide bg-pink-500 rounded-lg py-3 text-white" onclick="my_modal_5.showModal()" disabled>Make
                         Purchase</button>
                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                         <form method="dialog" class="modal-box w-[400px] h-[400px] grid justify-center">
