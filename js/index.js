@@ -11,7 +11,9 @@ function btnClickHandler(buy) {
     total += parseFloat(productPrice)
 
     const previousTotalPrice = document.getElementById('total-price');
+    const discountedTotalPrice = document.getElementById('discounted-total-price');
     previousTotalPrice.innerText = total;
+    discountedTotalPrice.innerText = total;
 
     // enable button
     const btnPurchase = document.getElementById('btn-purchase');
